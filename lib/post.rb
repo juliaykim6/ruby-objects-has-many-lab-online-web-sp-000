@@ -16,4 +16,11 @@ class Post
   def save
     @@all << self
   end
+
+  def author_name
+    if self.author
+      self.author.name
+    else
+    end
+  end
 end
